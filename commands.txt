@@ -1,2 +1,14 @@
 grep Andre /home/documents/db.csv -> search all ocurrencies in all rows of the type substring "Andre" in each row, and if the row has this substring return to us all these rows in the console
 	grep = global regular expressions
+
+grep -i or --ignore-case: Ignores case distinction, making the search case insensitive.
+grep -v or --invert-match: Inverts the match, displaying lines that do not contain the specified pattern.
+grep -r or -R or --recursive: Performs a recursive search in directories and their subdirectories. Useful for finding patterns in entire directory trees.
+grep -l or --files-with-matches: Displays only the names of files containing matches, instead of the matching lines themselves.
+grep -c or --count: Displays only the number of matches in each file, instead of the matching lines themselves.
+grep -n or --line-number: Displays the line number along with the corresponding lines.
+grep -E or --extended-regexp: Interprets the search pattern as an extended regular expression (Regex) instead of a literal match.
+grep -f <file> or --file=<file>: Reads search patterns from a file instead of specifying them directly on the command line.
+grep -h or --no-filename: Suppresses the display of file names when printing matching lines.
+grep -P: enables pattern interpretation mode as Perl-Compatible Regular Expressions (PCRE). This means you can use more advanced and complex regular expression patterns with the -P flag. Perl regular expressions are more powerful and flexible than the basic regular expressions used by grep by default. However, not all versions of grep support the -P option, as it depends on the PCRE (Perl-Compatible Regular Expressions) library. Therefore, check the availability of this option in your specific version of grep on your system.
+man grep: is an option that presents all the grep documentation in the terminal.
