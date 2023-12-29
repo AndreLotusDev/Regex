@@ -1,0 +1,2 @@
+grep Andre /home/documents/db.csv -> search all ocurrencies in all rows of the type substring "Andre" in each row, and if the row has this substring return to us all these rows in the console
+	grep = global regular expressions
